@@ -1,0 +1,54 @@
+body {
+    background-color: #F3F3FE; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h1, h4 {
+    margin: 15px 0px 15px 0px;
+}
+
+#container {
+    padding: 25px;
+    width: 75rem;
+    background-color: white;
+}
+
+#container > div {
+    margin-bottom: 30px;
+}
+
+/* -------------------------- NAME INFORMATION -------------------------- */
+
+#name_div > div {
+    display: flex;
+    gap: 15px;
+}
+
+.n_input_div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+label {
+    font-size: 12px;
+    color: grey;
+}
+
+/* -------------------------- EMAIL / PHONE INFORMATION -------------------------- */
+
+#e_input_div, #p_input_div {
+    display: flex;
+    flex-direction: column;
+    width: 49.3%;
+}
+
+
