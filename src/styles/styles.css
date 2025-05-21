@@ -11,13 +11,21 @@ h1, h4 {
 }
 
 #container {
+    /* display: flex;
+    flex-direction: column; */
     padding: 25px;
     width: 75rem;
     background-color: white;
 }
 
 #container > div {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+}
+
+#c_submit {
+    position: absolute;
+    left: 48%;
+    padding: 10px;
 }
 
 /* -------------------------- NAME INFORMATION -------------------------- */
@@ -51,4 +59,74 @@ label {
     width: 49.3%;
 }
 
+/* -------------------------- EDUCATION / PROFESSIONAL INFORMATION -------------------------- */
 
+
+.add_edu:hover, .add_prof:hover {
+    cursor: pointer;
+}
+
+img {
+    width: 25px;
+}
+
+.add_edu, .add_prof {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-style: dotted;
+    border-color: grey;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.edu_card, .prof_card {
+    margin: 15px 0 15px 0;
+    padding: 10px;
+    border: solid thin grey;
+    border-radius: 10px;
+}
+
+.edu_card > input, .prof_card > input {
+    margin: 0px 15px 15px 0;
+}
+
+.edu_card > div {
+    display: flex;
+}
+
+.edu_card > div > input, .prof_card > div > input {
+    margin-right: 15px;
+}
+
+.edu_card > div > button {
+    float: right;
+    margin-right: 10px;
+    padding: 5px;
+    width: 100px;
+}
+
+.prof_card {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn_div {
+    margin-left: auto;
+}
+
+.btn_div > button {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 100px;
+}
+
+.responsibilities {
+    margin-top: 5px;
+    width: 99.5%;
+    height: 75px;
+    resize: none;
+}
