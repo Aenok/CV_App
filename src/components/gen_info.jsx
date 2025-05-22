@@ -11,7 +11,7 @@ export default function GeneralInformation({ generalInfo, handleGenUpdate }) {
     }, [genData, handleGenUpdate]);
 
     const updateGenData = (objKey, value) => {
-        console.log(`updateGenData firing...`)
+        // console.log(`updateGenData firing...`)
         setGenData({...genData, [objKey] : value})
     }
 
@@ -42,15 +42,29 @@ export default function GeneralInformation({ generalInfo, handleGenUpdate }) {
                     </div>
                 </div>
             </div>
-            <div id="email_div">
-                <h4>Email Address</h4>
-                <div id="e_input_div">
-                    <input 
-                        type="text" 
-                        id="email"
-                        value={genData.email}
-                        onChange={(e) => updateGenData('email', e.target.value)}/>
-                    <label htmlFor="email">example@example.com</label>
+            <div id="address_div">
+                <div id="email_div">
+                    <h4>Email Address</h4>
+                    <div id="e_input_div">
+                        <input 
+                            type="text" 
+                            id="email"
+                            value={genData.email}
+                            onChange={(e) => updateGenData('email', e.target.value)}/>
+                        <label htmlFor="email">example@example.com</label>
+                    </div>
+                </div>
+                <div id="address">
+                    <h4>Home Address</h4>
+                    <div id="address_input_div">
+                        <input 
+                            type="text" 
+                            id="add"
+                            value={genData.address}
+                            onChange={(e) => updateGenData('address', e.target.value)}
+                             />
+                        <label htmlFor="add">123 Road St, Province, Country, Postal Code</label>
+                    </div>
                 </div>
             </div>
             <div id="phone_div">

@@ -10,6 +10,14 @@ h1, h4 {
     margin: 15px 0px 15px 0px;
 }
 
+p {
+    margin: 10px 0 10px 0;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
 #container {
     /* display: flex;
     flex-direction: column; */
@@ -28,7 +36,7 @@ h1, h4 {
     padding: 10px;
 }
 
-/* -------------------------- NAME INFORMATION -------------------------- */
+/* -------------------------- EDIT - NAME INFORMATION -------------------------- */
 
 #name_div > div {
     display: flex;
@@ -51,15 +59,24 @@ label {
     color: grey;
 }
 
-/* -------------------------- EMAIL / PHONE INFORMATION -------------------------- */
+/* -------------------------- EDIT - EMAIL / PHONE INFORMATION -------------------------- */
 
-#e_input_div, #p_input_div {
+#address_div {
     display: flex;
-    flex-direction: column;
-    width: 49.3%;
+    gap: 15px;
 }
 
-/* -------------------------- EDUCATION / PROFESSIONAL INFORMATION -------------------------- */
+#address_div > div {
+    flex: 1;
+}
+
+#e_input_div, #p_input_div, #address_input_div {
+    display: flex;
+    flex-direction: column;
+    /* width: 49.3%; */
+}
+
+/* -------------------------- EDIT - EDUCATION / PROFESSIONAL INFORMATION -------------------------- */
 
 
 .add_edu:hover, .add_prof:hover {
@@ -130,3 +147,56 @@ img {
     height: 75px;
     resize: none;
 }
+
+/* -------------------------- EDIT - NAV -------------------------- */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100rem;
+    height: 15rem;
+    background: lightgrey;
+}
+
+nav > div {
+    padding: 15px;
+}
+
+#f_name {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#f_address {
+    font-size: 20px;
+}
+
+#f_bot_info {
+    display: flex;
+    gap: 20px;
+}
+
+/* -------------------------- EDIT - WRAPPER -------------------------- */
+
+#wrapper {
+    width: 100rem;
+}
+
+#f_professional > h1, #f_education > h1 {
+    margin-top: 40px;
+}
+
+.exp_div {
+    margin-bottom: 30px;
+}
+
+.target {
+    margin-top: 0px;
+}
+
+h3 {
+    margin: 5px 0 5px 0;
+}
+
